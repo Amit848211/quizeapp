@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Question from './component/Question';
+import Data from './component/Data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+     <div className="bg-slate-700 w-[100vw] h-[100vh] flex flex-col gap-10 items-center pt-[8%]">
+     <h1 className="text-4xl font-bold text-orange-500">Quize App</h1>
+
+      {/* <Question /> */}
+      <Data />
+     </div>
+   </>
   );
 }
 
